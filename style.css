@@ -460,18 +460,295 @@ a {
   margin-top: 20px;
 }
 
-/* .sales-earn1 {
-  display: flex;
-  flex-direction: column;
-} */
-/* .sales-img {
-    width: 35rem;
+@media screen and (max-width: 768px) {
+  body {
+    margin: var(--header-height) 0 0 0;
+    padding: 0 0.5rem;
   }
-  .sales-earn {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+
+  .header {
+    padding: 0 0.5rem;
   }
-  
-}  */
+
+  .header_img img {
+    width: 30px;
+  }
+
+  .l-navbar {
+    left: -80%;
+    padding: 1rem 0.5rem 0 0;
+  }
+
+  .show {
+    width: calc(var(--nav-width) + 68px);
+  }
+
+  .body-pd {
+    padding-left: calc(var(--nav-width) + 100px);
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+  body {
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+
+  .header {
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+
+  .header_img {
+    width: 15rem;
+    height: 40px;
+  }
+
+  .header_img img {
+    width: 35px;
+  }
+
+  .l-navbar {
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+
+  .show {
+    width: calc(var(--nav-width) + 156px);
+  }
+
+  .body-pd {
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+  .sales-one {
+    width: 14rem;
+  }
+  .sales-chart {
+    width: 30rem;
+  }
+  .sales-img {
+    width: 27rem;
+  }
+  .calendar {
+    width: 30rem;
+  }
+  .days {
+    gap: 53px;
+  }
+  .date-one {
+    gap: 26px;
+  }
+  .date-two {
+    gap: 26px;
+  }
+  .date-three {
+    gap: 26px;
+  }
+  .date-four {
+    gap: 26px;
+  }
+  .date-five {
+    gap: 26px;
+  }
+  .date-six {
+    gap: 26px;
+  }
+  .world-map {
+    width: 30rem;
+    margin-left: 0;
+  }
+  .map img {
+    width: 22rem;
+  }
+  .circle {
+    width: 30rem;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .first {
+    width: 22rem;
+  }
+  .header_img {
+    margin-right: 11rem;
+  }
+
+  .username {
+    display: none;
+  }
+  .sales-one {
+    margin-top: 10px;
+    width: 11rem;
+  }
+  .l-navbar {
+    height: -webkit-fill-available;
+  }
+  .sales-chart {
+    width: 11rem;
+  }
+  .sales-img {
+    width: 9.5rem;
+  }
+  .calendar {
+    width: 11rem;
+  }
+  .days {
+    gap: 5px;
+  }
+  .date-one {
+    gap: 3px;
+  }
+  .date-two {
+    gap: 3px;
+  }
+  .date-three {
+    gap: 3px;
+  }
+  .date-four {
+    gap: 3px;
+  }
+  .date-five {
+    gap: 3px;
+  }
+  .date-six {
+    gap: 3px;
+  }
+
+  .thirty {
+    margin-right: 10px;
+  }
+  .thirty-one {
+    margin-right: 12px;
+  }
+  .one {
+    margin-right: 14px;
+  }
+  .two {
+    margin-right: 16px;
+  }
+  .three {
+    margin-right: 10px;
+  }
+  .four {
+    margin-right: 10px;
+  }
+  .six {
+    margin-right: 16px;
+    margin-left: 5px;
+  }
+  .seven {
+    margin-right: 13px;
+  }
+  .eight {
+    margin-right: 15px;
+  }
+  .nine {
+    margin-right: 11px;
+  }
+  .ten {
+    margin-right: 7px;
+  }
+  .eleven {
+    margin-right: 5px;
+  }
+  .thirteen {
+    margin-right: 9px;
+    margin-left: 3px;
+  }
+  .fourteen {
+    margin-right: 8px;
+  }
+  .fifteen {
+    margin-right: 4px;
+  }
+  .sixteen {
+    margin-right: 3px;
+  }
+  .seventeen {
+    margin-right: 7px;
+  }
+  .eighteen {
+    margin-right: 5px;
+  }
+  .twenty {
+    margin-right: 10px;
+    margin-left: 3px;
+  }
+  .twentyone {
+    margin-right: 8px;
+  }
+  .twentytwo {
+    margin-right: 8px;
+  }
+  .twentythree {
+    margin-right: 8px;
+  }
+  .twentyfour {
+    margin-right: 8px;
+  }
+  .twentyfive {
+    margin-right: 4px;
+  }
+
+  .twentyseven {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .twentyeight {
+    margin-right: 4px;
+  }
+  .twentynine {
+    margin-right: 8px;
+  }
+  .thirtythirty {
+    margin-right: 8px;
+  }
+  .thirtyone {
+    margin-right: 12px;
+  }
+  .oneone {
+    margin-right: 9px;
+  }
+  .date-six {
+    margin-top: -5px;
+  }
+  .threethree {
+    margin-left: 8px;
+    margin-right: 14px;
+  }
+  .fourfour {
+    margin-right: 16px;
+  }
+  .fivefive {
+    margin-right: 12px;
+  }
+  .sixsix {
+    margin-right: 15px;
+  }
+  .sevenseven {
+    margin-right: 16px;
+  }
+  .eighteight {
+    margin-right: 8px;
+  }
+  .world-map {
+    width: 11rem;
+  }
+  .plus {
+    display: none;
+  }
+  .minus {
+    display: none;
+  }
+  .map img {
+    width: 8rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .circle {
+    width: 11rem;
+    margin-left: 0;
+  }
+}
